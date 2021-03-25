@@ -1,0 +1,109 @@
+/* Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del header */
+
+header{
+    padding: 10% 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../img/pexels-mateusz-dach-450035.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1{
+    font-size: 60px;
+    
+}
+
+header h2{
+    font-size: 40px;
+  
+}
+/* Reglas para las columnas */
+#section2 .column-1 {
+    width: 100%;
+    float: left;
+    background: #5f9ea0;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+#section3 .column-2   {
+    width: 50%;
+    padding: 0 7%;
+    float: left;
+    
+}
+
+#map{
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+#section4 .column-3{
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    background-color: #21252995;
+    height: 100px;
+}
+.column-3 > p {
+    color: lightcyan;
+}
+.column-3 > h1 {
+    font-size: 25px;
+}
+a  {
+    color: lightcyan;
+    text-decoration: none;
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+}
+#section5  {
+    width: 100%;
+    float: left;
+    background: black;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    height: 40px;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px){
+    header h1{
+        font-size: 50px;
+    }
+    header h2{
+        font-size: 30px;
+    }
+    header {
+        padding: 50px;
+    }
+    #section3 .column-2{
+        width: 100%;
+        
+    }
+    #section2 #section3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
