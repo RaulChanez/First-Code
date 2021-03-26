@@ -1,13 +1,15 @@
 /* Generales */
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /* Estilos del header */
 
-header{
+header {
     padding: 10% 20px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -16,71 +18,105 @@ header{
     background-attachment: fixed;
 }
 
-header h1{
+header h1 {
     font-size: 60px;
-    
 }
 
-header h2{
+header h2 {
     font-size: 40px;
-  
 }
+
+
 /* Reglas para las columnas */
+
+
+/*section1*/
+
+#section1 {
+    text-align: center;
+}
+
+.gallery {
+    width: 33.33%;
+    float: left;
+}
+
+.gallery>img {
+    width: 100%;
+}
+
+
+/*section2*/
+
 #section2 .column-1 {
     width: 100%;
     float: left;
     background: #5f9ea0;
     text-align: center;
-    padding: 30px;
+    /*     padding: 30px;
+ */
     color: white;
 }
 
-#section3 .column-2   {
+
+/*Seccion3*/
+
+#section3 .column-2 {
     width: 50%;
-    padding: 0 7%;
+    /* padding: 0 7%; */
     float: left;
-    
 }
 
-#map{
+#map {
     width: 100%;
     height: 450px;
     border: 0;
 }
 
-#section4 .column-3{
+
+/* Seccion*/
+
+#section4 .column-3 {
     width: 33.33%;
     float: left;
-    padding: 20px;
+    /*     padding: 20px;
+ */
     text-align: center;
     background-color: #21252995;
     height: 100px;
 }
-.column-3 > p {
+
+.column-3>p {
     color: lightcyan;
 }
-.column-3 > h1 {
+
+.column-3>h1 {
     font-size: 25px;
 }
-a  {
+
+a {
     color: lightcyan;
     text-decoration: none;
     list-style-type: none;
 }
+
 li {
     list-style-type: none;
 }
-#section5  {
+
+
+/* Sección 5*/
+
+#section5 {
     width: 100%;
     float: left;
     background: black;
     text-align: center;
-    padding: 30px;
+    /*     padding: 30px;
+ */
     color: white;
     height: 40px;
 }
-
-
 
 .row:after {
     content: "";
@@ -88,22 +124,55 @@ li {
     clear: both;
 }
 
-@media screen and (max-width: 600px){
-    header h1{
+.relleno-lateral {
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.relleno-columnas {
+    padding: 20px;
+}
+
+.relleno-imagenes{
+    padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
         font-size: 50px;
     }
-    header h2{
+    header h2 {
         font-size: 30px;
     }
     header {
         padding: 50px;
     }
-    #section3 .column-2{
+    #section1 .gallery {
         width: 100%;
-        
+    }
+    #section3 .column-2 {
+        width: 100%;
     }
     #section2 #section3 {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    #section4 > #title{
+        width: 100%;
+    }
+    #section4>.column3 {
+        width: 50%;
+    }
+    
+    .relleno-lateral {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #section1 > .column-1{
+        width: 100%;
+    }
+    #section1 > .gallery{
+        width: 50%;
     }
 }
